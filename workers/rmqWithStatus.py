@@ -7,7 +7,7 @@ from pika import BlockingConnection, URLParameters, BasicProperties
 from pika.adapters.blocking_connection import BlockingChannel
 from functools import partial
 
-from ..messages import BaseMessage, StatusMessage, StatusMessageType
+from .messages import BaseMessage, StatusMessage, StatusMessageType
 
 _rmqProcesses = []
 _stopEvent = Event()
